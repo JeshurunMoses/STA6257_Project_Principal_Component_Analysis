@@ -1,6 +1,6 @@
 ---
-title: "Principal Component Analysis"
-author: "Jeshurun Moses Pon"
+title: "Report Sample"
+author: "Student name"
 date: '`r Sys.Date()`'
 format:
   html:
