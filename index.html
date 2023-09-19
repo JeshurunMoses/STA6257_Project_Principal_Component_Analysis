@@ -3184,13 +3184,14 @@ return!"\t\n\x0B\f\r                　\u2028\u2029
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This is an introduction to Kernel regression, which is a non-parametric estimator that estimates the conditional expectation of two variables which is random. The goal of a kernel regression is to discover the non-linear relationship between two random variables. To discover the non-linear relationship, kernel estimator or kernel smoothing is the main method to estimate the curve for non-parametric statistics. In kernel estimator, weight function is known as kernel function <span class="citation" data-cites="efr2008">(<a href="#ref-efr2008" role="doc-biblioref">Efromovich 2008</a>)</span>. Cite this paper <span class="citation" data-cites="bro2014principal">(<a href="#ref-bro2014principal" role="doc-biblioref">Bro and Smilde 2014</a>)</span>. The GEE <span class="citation" data-cites="wang2014">(<a href="#ref-wang2014" role="doc-biblioref">Wang 2014</a>)</span>.</p>
+<p> <span class="citation" data-cites="efr2008">(<a href="#ref-efr2008" role="doc-biblioref">Efromovich 2008</a>)</span>. Cite this paper <span class="citation" data-cites="bro2014principal">(<a href="#ref-bro2014principal" role="doc-biblioref">Bro and Smilde 2014</a>)</span>. The GEE <span class="citation" data-cites="wang2014">(<a href="#ref-wang2014" role="doc-biblioref">Wang 2014</a>)</span>.</p>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
-<p>The common non-parametric regression model is <span class="math inline">\(Y_i = m(X_i) + \varepsilon_i\)</span>, where <span class="math inline">\(Y_i\)</span> can be defined as the sum of the regression function value <span class="math inline">\(m(x)\)</span> for <span class="math inline">\(X_i\)</span>. Here <span class="math inline">\(m(x)\)</span> is unknown and <span class="math inline">\(\varepsilon_i\)</span> some errors. With the help of this definition, we can create the estimation for local averaging i.e. <span class="math inline">\(m(x)\)</span> can be estimated with the product of <span class="math inline">\(Y_i\)</span> average and <span class="math inline">\(X_i\)</span> is near to <span class="math inline">\(x\)</span>. In other words, this means that we are discovering the line through the data points with the help of surrounding data points. The estimation formula is printed below <span class="citation" data-cites="R-base">(<a href="#ref-R-base" role="doc-biblioref">R Core Team 2019</a>)</span>:</p>
+<p> <span class="math inline">\(m(x)\)</span> can be estimated with the product of <span class="math inline">\(Y_i\)</span> average and <span class="math inline">\(X_i\)</span> is near to <span class="math inline">\(x\)</span>. In other words, this means that we are discovering the line through the data points with the help of surrounding data points. The estimation formula is printed below <span class="citation" data-cites="R-base">(<a href="#ref-R-base" role="doc-biblioref">R Core Team 2019</a>)</span>:</p>
 <p><span class="math display">\[
-M_n(x) = \sum_{i=1}^{n} W_n (X_i) Y_i  \tag{1}
+
+
 \]</span> <span class="math inline">\(W_n(x)\)</span> is the sum of weights that belongs to all real numbers. Weights are positive numbers and small if <span class="math inline">\(X_i\)</span> is far from <span class="math inline">\(x\)</span>.</p>
 </section>
 <section id="analysis-and-results" class="level2">
